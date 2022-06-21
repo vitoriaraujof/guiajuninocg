@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/css/calendary.css">
+    <title>Guia Junino Campina</title>
+
+
+
+</head>
+
+<body>
+
+    <!-- Início do menu -->
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <img src="./img/logo1.png" alt="logo-guiajuninocg">
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="/index.html">INÍCIO </a>
+            <a href="/historia.html">HISTÓRIA</a>
+            <a dropdown-toggle" href="#" id="dropdownMenuLink" data-bs-toggle="dropdown"
+                aria-expanded="false">ROTEIROS</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="/bate-volta.html">Bate-voltas</a></li>
+                <li><a class="dropdown-item" href="/pontos-turisticos.html">Pontos turísticos</a></li>
+                <li><a class="dropdown-item" href="/museus.html">Museus</a></li>
+            </ul>
+            <a href="/eventos.html">EVENTOS</a>
+            <a href="/culinaria.html">CULINÁRIA</a>
+            <a href="/hospedagem.html" target="_blank">HOSPEDAGEM</a>
+        </div>
+    </div>
+    <!-- Fim do menu -->
+
+
+    <!--Início do carrossel-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="/img/home1.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-md-block " style="padding-bottom: 20px; float: left; text-align: left;">
+                    <div class="data">
+                        DE 10 DE JUNHO A 10 DE JULHO
+                    </div>
+                    <div class="titulobanner">
+                        PROGRAMAÇÃO OFICIAL COMPLETA
+                        <p class="botaobanner"><a href="/eventos.html" class="btn btn-light">CONFIRA AQUI</a></p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/home2.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block"
+                    style="padding-bottom: 20px; padding-left: 200px; float: left; text-align: left; color: rgb(255, 255, 255);">
+                    <div class="roteiros">
+                        >ROTEIROS
+                    </div>
+                    <div class="titulobanner">
+                        CONHEÇA O CORAÇÃO DO ARTESANATO CAMPINENSE
+                        <p class="botaobanner2"><a href="/pontos-turisticos.html#viladoartesao"
+                                class="btn btn-light">VISITE A VILA DO ARTESÃO</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="/img/home3.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block" style="padding-bottom: 1px;text-align: center;">
+                    <div class="culinaria">
+                        >CULINÁRIA
+                    </div>
+                    <div id="titulobannerculinaria">
+                        PROVE O MELHOR DAS COMIDAS TÍPICAS JUNINAS
+                        <p class="botaobanner3"><a href="/culinaria.html" class="btn btn-light">CLIQUE PARA
+                                DESCOBRIR</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
+    </div>
+    <!--Fim do carrossel-->
+
+
+
+    <iframe class="video"  src="https://www.youtube.com/embed/nWyuQQb-yBg" title="YouTube video player &autoplay=1"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
+        <!-- postagens calendario -->
+        <div class="swiper mySwiper">
+            <H5 style="text-align: center;"> CALENDÁRIO</H5>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card" style="width: 20rem; ">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                15 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Cavaleiros do Forró
+                                    Kátia Cilene
+                                    Bob Léo Mercadoria
+                                    Forró do Nosso Jeito
+                                    .
+                                    atrações no parque do povo</H6>
+
+                            <li class="list-group-item">
+                                16 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Felipe Amorim
+                                    Fabiano Guimarães
+                                    Johny Garotinho
+                                    Guilherme Ferry
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            <li class="list-group-item">
+                                17 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Avine Vinny
+                                    Aduílio Mendes
+                                    Nathan Vinicius
+                                    Rapha Melo , atrações no parque do povo
+                                </H6>
+                            </li>
+
+                            <li class="list-group-item">
+                                18 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Felipe Araújo
+                                    Ton Oliveira
+                                    Fabrício Rodrigues
+                                    Diego Santana
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+
+
+                            <li class="list-group-item">
+                                19 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Gusttavo Lima
+                                    Pedro Cavalcanti
+                                    Felipe Rossi
+                                    Raphael Moura
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                
+                <div class="swiper-slide">
+                    <div class="card" style="width: 20rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                21 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Programação religiosa Padre Nilson e
+                                    Elson Júnior
+                                    atrações no parque do povo
+                                    
+                                </H6>
+                            </li>
+                            <li class="list-group-item">
+                                22 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Alok
+                                    Matheus Fernandes
+                                    Filipe Santos
+                                    Ramon Schnayder
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            
+                            <li class="list-group-item">
+                                23 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Elba Ramalho
+                                    Nattan
+                                    Diego Faria
+                                    Tony Dumond
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            
+                            <li class="list-group-item">
+                                24 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Juliette
+                                    Roberta Miranda
+                                    Os Gonzagas
+                                    Ana Barros
+                                    Assisão
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            
+                            <li class="list-group-item">
+                                25 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Israel e Rodolfo
+                                    Vitória Freitas
+                                    Felipe Alcantara
+                                    Biliu de Campina
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card" style="width: 20rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                26 JUNHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Bruno e Denner
+                                    Gil Mendes
+                                    Luka Bass
+                                    Jeito Nordestino
+                                    atrações no parque do povo
+                                </H6>
+                                
+                                <li class="list-group-item">
+                                    28 JUNHO
+                                    <H5>PARQUE DO POVO</H5>
+                                    <H6>
+                                        Limão com Mel
+                                        Lipe Lucena
+                                        Forró D2
+                                        Forrozão das Antigas
+                                        atrações no parque do povo
+                                    </H6>
+                                </li>
+                                <li class="list-group-item">
+                                    29 JUNHO
+                                    <H5>PARQUE DO POVO</H5>
+                                    <H6>
+                                        Gustavo Mioto
+                                        Eliane
+                                        Gegê Bismarck
+                                        Brucelose'
+                                        atrações no parque do povo
+                                    </H6>
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    30 JUNHO
+                                    <H5>PARQUE DO POVO</H5>
+                                    <H6>
+                                        Edy Vaqueiro
+                                        Artur Resenha
+                                        Forró 3 X 4
+                                        Forrozão Karakará
+                                        atrações no parque do povo
+                                    </H6>
+                                </li>
+                                <li class="list-group-item">
+                                    01 JULHO
+                                    <H5>PARQUE DO POVO</H5>
+                                    <H6>
+                                        Mari Fernandes
+                                        Os 3 do Nordeste
+                                        Banda Cascavel
+                                        Novinho da Paraíba
+                                        atrações no parque do povo
+                                </H6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="swiper-slide">
+                    <div class="card" style="width: 20rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                02 JULHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Zé Vaqueiro
+                                    Magníficos
+                                    Cavalo de Pau
+                                    Donas da Farra
+                                    atrações no parque do povo
+                                </H6>
+                                
+                                <li class="list-group-item">
+                                    03 JULHO
+                                    <H5>PARQUE DO POVO</H5>
+                                    <H6>
+                                        
+                                        Walkyria Santos
+                                        Henry Freitas
+                                    Waldonys
+                                    Niedson Lua
+                                    Laís Menezes (São João Kids)
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            <li class="list-group-item">
+                                06 JULHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Raí Saia Rodada
+                                    Japãozin
+                                    Mayheus Alves
+                                    Lord Vinne
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            
+                            <li class="list-group-item">
+                                07 JULHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Solange Almeida
+                                    Márcia Fellipe
+                                    Sâmya Maia
+                                    Michel Barka
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                            
+                            <li class="list-group-item">
+                                08 JULHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Dorgival Dantas
+                                    Taty Girl
+                                    Victor Santos
+                                    Ranniery Gomes
+                                    atrações no parque do povo
+                                </H6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="swiper-slide">
+                    <div class="card" style="width: 20rem;">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                09 JULHO
+                                <H5>PARQUE DO POVO</H5>
+                                <H6>
+                                    Jonas Esticado
+                                    Santana
+                                    Felipe Warley
+                                    Banda Mexe Ville
+                                    atrações no parque do povo
+                                </H6>
+                                
+                                <li class="list-group-item">
+                                    10 JULHO
+                                    <H5>PARQUE DO POVO</H5>
+                                    <H6>
+                                        Wesley Safadão
+                                        Stela Alves
+                                        Bizay
+                                        Cleydson Gavião
+                                        Capilé
+                                        atrações no parque do povo
+                                    </H6>
+                                </li>
+                                <li class="list-group-item">
+                                    16 JULHO
+                                    <H5>VILA SITIO SÃO JOÃO</H5>
+                                    <H6>
+                                        ATRAÇÃO SURPRESA
+                                        JM Puxado
+                                        Guilherme Ferri
+                                        atrações no parque do povo
+                                    </H6>
+                                </li>
+                                
+                                <li class="list-group-item">
+                                    17 JULHO
+                                    <H5>VILA SITIO SÃO JOÃO</H5>
+                                    <H6>
+                                        Calcinha Preta
+                                        Banda Cascavel
+                                        Donas da Farra
+                                        atrações no parque do povo
+                                    </H6>
+                                </H6>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div> 
+        
+        
+        
+        
+        
+        
+        <div class="conteudo3">
+            <div class="container">
+                
+                <h1>O Maior São João Do Mundo !</h1>
+                <p>
+                    <h3><b>O Maior São João do Mundo</b> ou <b>São João de Campina Grande</b> é um evento anual realizado pela prefeitura de Campina Grande, no estado brasileiro da Paraíba, durante o mês de junho. Na cultura do Nordeste brasileiro, é típico comemorar o dia de São João através de espetáculos, danças e quadrilhas.</h3>
+                    <a target="_blank" href="historia.html" class="btn btn-light">Ver Mais</a>
+                </p>
+            </div>
+        </div>
+        
+        <section class="gallery">
+            <div class="gallery-row">
+                <div>
+                    <img src="img/saojoao02.jfif" class="gallery-item" alt="gallery" />
+                    
+                </div>
+                <div>
+                    
+                    <img src="img/Parque-do-Povo-Campina-Grande-Crédito-Emanuel-Tadeu.jpg" class="gallery-item" alt="gallery" />
+                    
+                </div>
+                <div>
+                    
+                    <img src="img/sao_joao_de_campina_grande.jpg" class="gallery-item" alt="gallery" />
+                    
+                </div>
+                <div>
+                    
+                    <img src="img/mano-walter-foto-de-emanuel-tadeu-1-.webp" class="gallery-item" alt="gallery" />
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+        <div class="conteudo4">
+            <div class="container">
+                
+                <h1>Acompanhe as Festas!</h1>
+                <p>
+                    <h3>Avisa que vai ter São João! E vai ter a melhor programação para juntos fazermos o Melhor São João de nossas vidas! Acompanhe todos os eventos desde os gratuitos aos pagos em campina grande, Parque do Povo , Vila Sítio São João , Vila Forró , Clube Campestre , Spazzio entre outros!</h3>
+                    <a target="_blank" href="eventos.html" class="btn btn-light">Ver Mais</a>
+                </p>
+            </div>
+        </div>
+        
+        
+        
+        <div class="rodape1">
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a href="historia.html">HISTÓRIA</a></li>
+                <li><a href="bate-volta.html">BATE-VOLTAS</a></li>
+                <li><a href="pontos-turisticos.html">PONTOS TURISTICOS</a></li>
+                <li><a href="museus.html">MUSEUS</a></li>
+                <li><a href="eventos.html">EVENTOS</a></li>
+                <li><a href="culinaria.html">CULINÁRIA</a></li>
+                <li><a href="hospedagem.html">HOSPEDAGEM</a></li>
+            </ul>
+        </div>
+        
+        
+        
+        
+        <!-- container gal -->
+        <!-- <div class="container col">s
+    <div class="row">        
+                <div class="col">
+                    <div class="noticiahome">
+                    <h3> NOTICÍAS</h3>    
+                    <a target="_blank" href="https://g1.globo.com/pb/paraiba/sao-joao/2022/noticia/2022/06/06/roberta-miranda-tem-show-confirmado-no-sao-joao-2022-de-campina-grande.ghtml"><img src="img/roberta-100.jpg" class="media-object  img-responsive img-thumbnail"></a>
+                </div>    
+    
+                    
+                </div>
+                <div class="col">
+                    <br><br><br>
+                    <div class="noticiahome2">
+                        <a target="_blank" href="https://g1.globo.com/pb/paraiba/sao-joao/2022/noticia/2022/06/12/sao-joao-2022-conheca-lugares-proximos-a-campina-grande-para-visitar-durante-festejos-juninos.ghtml"><img src="img/arastape8-100.jpg" class="media-object  img-responsive img-thumbnail"></a>
+                    </div>    
+                    <br>
+                    <div class="noticiahome3">
+                        <a href="https://g1.globo.com/pb/paraiba/sao-joao/2022/noticia/2022/06/14/moleka-100-vergonha-vence-festival-de-quadrilhas-juninas-2022-de-campina-grande.ghtml"><img src="img/moleka9-100.jpg" class="media-object  img-responsive img-thumbnail"></a>
+                    </div>    
+                </div>    
+            </div>    
+        </div>    
+    </div> -->    
+        
+        
+        <!-- Inicio do rodapé -->
+        <div class="rodape">
+            <img src="./img/logo1.png" alt="logo-guiajuninocg">
+        </div>
+        <!-- Final do rodapé -->
+        
+        
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+            effect: "flip",
+            grabCursor: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
