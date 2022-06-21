@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* CSS do menu */
+
+
+
+.nav {
+    height: 100px;
+    width: 100%;
+    background-image: url("/img/bg01.jpg");
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: 'Roboto Condensed', sans-serif;
+
+  
+  }
+  
+  .nav-header{
+    margin-left: 10px;
+  }
+
+  .nav-header img{
+    width: 170px;
+    padding-top:5px;
+  }
+
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    /* float: right; */
+    font-size: 18px;
+    justify-content: center;
+    font-size: 1.3rem;
+    padding-right: 180px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 30px 13px 30px;
+    text-decoration: none;
+    color: #efefef;
+    margin-top:25px;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      margin: 20px;
+
+    
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    /* botão hamburguer */
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-image: url("/img/bgmenu.jpg");
+      background-repeat: no-repeat;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 100px;
+      padding-right: 0;
+      /* left: 0px; */
+      
+     }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top:2px;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+
+}
+
+  
+.dropdown-menu{
+    background-image: url("/img/bg01.jpg") ;
+
+}
+.dropdown-menu li a{
+    color: aliceblue;
+    text-transform: uppercase;
+}
+
+  /* Fim do CSS do menu */
+
+
+.data{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d19366;
+    padding-left: 250px;
+    padding-top: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+.roteiros{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d19366;
+    padding-left: 250px;
+    padding-top: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+   color: #8b6446;
+}
+
+.titulobanner{
+    font-size: 2.7rem;
+    width: 800px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    float: left;
+    padding-left: 250px;
+
+}
+
+#titulobannerculinaria{
+    font-size: 2.7rem;
+    width: 700px;
+    color: #ffffff;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1;
+    text-align: center;
+}
+
+.botaobanner a{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 150px;
+    color: #305292;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.botaobanner2 a{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 220px;
+    border-radius: 10px;
+    color: #c58866;
+    font-weight: bold;
+    text-align: center;
+}
+
+.botaobanner3 a{
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 220px;
+    border-radius: 10px;
+    color: #1a0f04;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px;
+    
+}
+
+.culinaria{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #f6cd30;
+    
+}
+
+
+.rodape {
+    background-image: url("/img/bg01.jpg") ;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 121px;
+    display: flex;
+    clear: both;
+}
+
+
+.noticiahome{
+    width:480px;
+    height:480px;
+    margin-left: -5px;
+  
+}
+
+.noticiahome2{
+  width: 410px;
+  height: 200px;
+
+}
+
+.noticiahome3{
+  width: 410px;
+  height: 250px;
+
+}
+
+
+/* galeria são joão */
+.gallery{
+    
+  max-width: 2000px;
+  margin: 64px auto 0;
+  padding: 0 24px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  }
+
+.gallery-row{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.gallery-row div{
+  flex: 1 1 250px
+}
+
+.gallery-row img{
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.conteudo3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: roboto;
+  align-items: center;
+  width: 100%;
+  min-height: 380px;
+  color: #ebebeb;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #305292;
+}
+
+.conteudo4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: roboto;
+  align-items: center;
+  width: 100%;
+  min-height: 380px;
+  color: #ebebeb;
+  text-align: left;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #305292;
+}
+
+
+
+
+
+.video{
+margin-top: 70px;
+margin-left: 40px;
+margin-bottom: 70px;
+width: 60%; height: 515px;
+
+}
+
+
+
+
+/* pré rodapé */
+.rodape1 ul{
+  list-style: none;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  background-color: #e9ecef;
+  margin-bottom: 0;
+}
+
+.rodape1 ul li+li{
+margin-left: -200px;
+  padding: 30px;
+}
+
+
+.rodape1 a{
+color: #305292;
+  text-decoration: none;
+  transition: color 0.1s;
+  font-size: 18px;
+  
+}
+
+.rodape1 a:hover{
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* fim pré rodapé */
+
+
+footer{
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.container{
+  width: 100%; height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+.dropdown-menu li a{
+    width: 500px;
+    padding-left: 30px;
+    text-transform: uppercase;
+}
+
+.dropdown-menu{
+    padding-left: 50px;
+    float: right;   
+}
+
+#carouselExampleIndicators{
+    display: none;
+
+}
+.noticiahome{
+    width: 410px;
+    height: 410px;
+    margin-left: 15px;
+}
+
+.moleka{
+    margin-bottom:50px;
+}
+
+}
+
+.container .row h3{
+    color: #305292;
+    border-left: 3px solid #305292 ;
+    padding-left: 15px;
+    margin-top: 30px;
+    display: inline-block;
+/* margin-right: 50px; */
+
+    
+}
+
+.container .row h2{
+color: #ebebeb;
+
+} 
+
